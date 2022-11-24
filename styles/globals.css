@@ -1,0 +1,111 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: white;
+  background: black;
+  min-height: 100vh;
+}
+
+#__next {
+  min-height: 100vh;
+  overflow: hidden;
+} 
+
+.layout-container {
+  min-height: 85vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  min-height: 15vh;
+  z-index: 99;
+  background-color: black;
+}
+
+.navbar .navbar-brand {
+  margin-left: 32px;
+}
+
+.navbar a {
+  margin-right: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #e6e6e6;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+/* Home Section */
+#home{
+  position: relative;
+  min-height: 85vh;
+}
+
+#home .home-content {
+  text-align: center;
+  margin-bottom: 13%;
+  z-index: 1;
+}
+
+#home .home-content h1 {
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 34px;
+}
+
+#home .home-content h4 {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: .8px;
+  margin-bottom: 0;
+}
+
+#home .languages {
+  position: absolute;
+  bottom: 50px;
+  left: -20px;
+  gap: 15px;
+}
+
+#home .social-media {
+  position: absolute;
+  bottom: 50px;
+  right: -20px;
+  gap: 18px;
+  z-index: 1;
+}
+
+#home .bannerImg {
+  position: absolute;
+  right: 120px;
+  bottom: 20px;
+}
+
+@media (max-width: 728px) {
+  /* Home Media */
+  #home .languages {
+    position: absolute;
+    bottom: 10px;
+    left: auto;
+    right: 0px;
+    gap: 15px;
+  }
+
+  #home .social-media {
+    display: none !important;
+  }
+}
