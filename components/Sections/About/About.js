@@ -1,9 +1,10 @@
 import Services from "./Services";
+import Skills from "./Skills";
 import { Twitter, AlternateEmail, LinkedIn, GitHub, Instagram } from '@mui/icons-material';
 
 const About = () => {
   return (
-    <section id='about'>
+    <section id='about' className="p-4">
       <div className='about-info single-section'>
         <div className='row align-items-center'>
           {/* <!-- Picture part--> */}
@@ -63,6 +64,7 @@ const About = () => {
         </div>
       </div>
       <Services />
+      <Skills />
     </section>
   )
 }

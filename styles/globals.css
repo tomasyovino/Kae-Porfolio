@@ -56,6 +56,28 @@ a {
   margin-bottom: 120px;
 }
 
+.section-heading {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.section-heading p {
+  font-size: 15px;
+  margin-bottom: 17px;
+  color: #9f9f9f;
+}
+
+.section-heading h2 {
+  display: inline-block;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -.25px;
+  line-height: 100%;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 9;
+}
+
 /* Home Section */
 #home{
   position: relative;
@@ -202,6 +224,50 @@ a {
   color: #009e66;
 }
 
+#about .about-services .single-service {
+  background-color: #161616;
+  border-bottom: 2px solid transparent;
+  box-shadow: 0 6px 16px rgb(0 0 0 / 20%);
+  margin-bottom: 30px;
+  padding: 38px 42px;
+  transition: all .15s ease-in-out;
+}
+
+#about .about-services .single-service:hover {
+  border-bottom: 2px solid #009e66;
+}
+
+#about .about-services .single-service i {
+  color: #009e66;
+  display: inline-block;
+  font-size: 58px;
+  margin-bottom: 22px;
+  pointer-events: none;
+}
+
+#about .about-services .single-service h6 {
+  color: #f3f3f3;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -.5px;
+  margin-bottom: 14px;
+}
+
+#about .about-services .single-service p {
+  color: #9f9f9f;
+}
+
+.skill-slider {
+  margin: 50px 0;
+}
+
+.skill-slider img {
+  width: 50%;
+  height: 96px;
+  margin: 0 auto 15px auto;
+  pointer-events: none;
+}
+
 @media (max-width: 728px) {
   /* Home Media */
   #home .languages {
@@ -214,5 +280,10 @@ a {
 
   #home .social-media {
     display: none !important;
+  }
+
+  /* About Media */
+  #about .about-info .info-content .content-download {
+    margin-bottom: 27px;
   }
 }

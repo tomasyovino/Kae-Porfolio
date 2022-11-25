@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Twitter, AlternateEmail, LinkedIn, GitHub, Instagram } from '@mui/icons-material';
-import bannerMoon from "../../../img/assets/bannerAsset.jpg";
+import bannerMoon from "../../../assets/img/bannerAsset.jpg";
 
 const Banner = () => {
   return (
