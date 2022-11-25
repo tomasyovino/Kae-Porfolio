@@ -2,11 +2,15 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Poppins,sans-serif;
   color: white;
-  background: black;
+  background: #101010;
   min-height: 100vh;
+}
+
+::selection {
+  background-color: #009e66;
+  color: #fff;
 }
 
 #__next {
@@ -30,7 +34,7 @@ a {
 .navbar {
   min-height: 15vh;
   z-index: 99;
-  background-color: black;
+  background-color: #101010;
 }
 
 .navbar .navbar-brand {
@@ -46,6 +50,10 @@ a {
 
 .navbar a:hover {
   color: white;
+}
+
+.single-section {
+  margin-bottom: 120px;
 }
 
 /* Home Section */
@@ -89,10 +97,109 @@ a {
   z-index: 1;
 }
 
+#home .social-media a:hover {
+  color: white;
+}
+
 #home .bannerImg {
   position: absolute;
   right: 120px;
   bottom: 20px;
+  pointer-events: none;
+}
+
+/* About Section */
+#about .about-info .info-content h2 {
+  color: #009e66;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+#about .about-info .info-content h6 {
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+#about .about-info .info-content .description {
+  font-size: 15px;
+  font-weight: 500;
+  color: #9f9f9f;
+  border-bottom: 2px solid rgba(255,255,255,.08);
+  margin-bottom: 0;
+  padding-bottom: 29px;
+  line-height: 1.95;
+}
+
+#about .about-info .info-content .content-info {
+  font-size: 15px;
+  margin-bottom: 4px;
+  padding: 29px 0;
+}
+
+#about .about-info .info-content .single-info {
+  margin-bottom: 10px;
+}
+
+#about .about-info .info-content .single-info span {
+  color: #dadada;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+#about .about-info .info-content .single-info p {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+#about .about-info .info-content .single-info a {
+  color: #009e66;
+  transition: all .15s ease-in-out;
+}
+
+#about .about-info .info-content .single-info a:hover {
+  color: #005537;
+}
+
+#about .about-info .info-content .content-download {
+  margin-right: 23px;
+  padding: 10px 35px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #009e66 !important;
+  border: 1px solid #009e66 !important;
+  border-radius: 30px;
+}
+
+#about .about-info .info-content .content-follow {
+  display: flex;
+  align-items: center;
+  line-height: 100%;
+  margin-bottom: 0;
+}
+
+#about .about-info .info-content .content-follow::before {
+  background-color: rgba(255,255,255,.25);
+  content: '';
+  height: 2px;
+  margin-right: 23px;
+  width: 60px;
+}
+
+#about .about-info .info-content .content-follow li {
+  margin-right: 14px;
+}
+
+#about .about-info .info-content .content-follow svg {
+  transition: .3s all;
+}
+
+#about .about-info .info-content .content-follow svg:hover {
+  color: #009e66;
 }
 
 @media (max-width: 728px) {
