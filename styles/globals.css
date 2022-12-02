@@ -1,9 +1,13 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Poppins,sans-serif;
-  color: white;
+  /* font-family: 'Source Code Pro', monospace; */
+  font-family: 'Roboto', sans-serif;
+  color: #f5f5f5;
   background: #101010;
   min-height: 100vh;
 }
@@ -76,6 +80,74 @@ a {
   margin-bottom: 0;
   position: relative;
   z-index: 9;
+}
+
+.section-heading.page-heading {
+  margin-bottom: 83px;
+  text-align: center;
+}
+
+.section-heading.page-heading h2 {
+  font-size: 46px;
+  margin-bottom: 37px;
+}
+
+.section-heading.page-heading .animated-bar {
+  background-color: #009e66;
+  content: '';
+  display: block;
+  height: 4px;
+  left: 0;
+  margin: 0 auto 0 auto;
+  position: relative;
+  right: 0;
+  width: 75px;
+}
+
+.section-heading.page-heading .animated-bar::before {
+  left: 8px;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: barAnimation;
+  -webkit-animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: barAnimation;
+  animation-timing-function: linear;
+  background-color: #101010;
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+.section-heading.page-heading .animated-bar::after {
+  left: 0;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: barAnimation;
+  -webkit-animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: barAnimation;
+  animation-timing-function: linear;
+  background-color: #101010;
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+@keyframes barAnimation{
+  from {
+    -webkit-transform:translateX(0);
+    transform:translateX(0)
+  } to {
+    -webkit-transform:translateX(75px);
+    transform:translateX(75px) 
+  }
 }
 
 /* Home Section */
@@ -268,6 +340,108 @@ a {
   pointer-events: none;
 }
 
+/* Contact Section */
+#contact .contact-content form h4 {
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+
+#contact .contact-content form .form-group {
+  margin-bottom: 25px;
+}
+
+#contact .contact-content form .form-control {
+  color: #777;
+  background-color: #161616;
+  border: none;
+  border-bottom: 1px solid #1d1d1d;
+  border-radius: 0;
+  font-size: 15px;
+  height: 44px;
+  padding: 9px 14px;
+  transition: .15s ease-in-out;
+  outline: none;
+}
+
+#contact .contact-content form .form-message #contact-message {
+  height: auto;
+}
+
+#contact .contact-content form .form-control:focus {
+  border-bottom: 1px solid #009e66;
+  box-shadow: none;
+}
+
+#contact .contact-content form .form-submit button {
+  padding: 10px 26px;
+  background-color: #009e66!important;
+  border: 1px solid #009e66!important;
+  color: #fff;
+  border-radius: 30px;
+}
+
+#contact .contact-content .contact-info {
+  padding-left: 15px;
+}
+
+#contact .contact-content .contact-info h4 {
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+#contact .contact-content .contact-info p {
+  font-size: 15px;
+  margin-bottom: 28px;
+  color: #9f9f9f;
+}
+
+#contact .contact-content .contact-info ul .media {
+  display: flex;
+}
+
+#contact .contact-content .contact-info ul .info-icon {
+  color: #009e66;
+  font-size: 36px;
+  margin-right: 50px;
+  position: relative;
+}
+
+#contact .contact-content .contact-info ul .info-details {
+  border-left: 2px solid rgba(255,255,255,.15);
+  padding: 12px 0 12px 22px;
+}
+
+#contact .contact-content .contact-info ul .info-icon:first-child {
+  margin-bottom: 13px;
+}
+
+#contact .contact-content .contact-info ul .info-details:first-child {
+  padding-top: 0;
+}
+
+#contact .contact-content .contact-info ul .info-icon:last-child {
+  margin-top: 13px;
+}
+
+#contact .contact-content .contact-info ul .info-details:last-child {
+  padding-bottom: 0;
+}
+
+#contact .contact-content .contact-info ul .info-details h6 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#contact .contact-content .contact-info ul .info-details span {
+  color: #9f9f9f;
+  transition: .3s all;
+}
+
+#contact .contact-content .contact-info ul .info-details a:hover span {
+  color: #707070;
+}
+
 @media (max-width: 728px) {
   /* Home Media */
   #home .languages {
@@ -285,5 +459,11 @@ a {
   /* About Media */
   #about .about-info .info-content .content-download {
     margin-bottom: 27px;
+  }
+
+  /* Contact Media */
+  #contact .contact-content .contact-info {
+    padding-left: 0;
+    margin-top: 50px;
   }
 }
