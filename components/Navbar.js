@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const Navbar = () => {
+
   return (
     <nav className="navbar navbar-dark navbar-expand-lg p-4">
       <div className="container-fluid">
