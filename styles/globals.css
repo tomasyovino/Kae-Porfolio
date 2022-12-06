@@ -1,15 +1,14 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  /* font-family: 'Source Code Pro', monospace; */
   font-family: 'Roboto', sans-serif;
   color: #f5f5f5;
   background: #101010;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 ::selection {
@@ -29,10 +28,6 @@ body {
 a {
   color: white;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .navbar {
@@ -165,14 +160,14 @@ a {
 #home .home-content h1 {
   font-size: 70px;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   margin-bottom: 34px;
 }
 
-#home .home-content h4 {
+#home .home-content span {
   font-size: 32px;
   font-weight: 400;
-  letter-spacing: .8px;
+  letter-spacing: 1px;
   margin-bottom: 0;
 }
 
