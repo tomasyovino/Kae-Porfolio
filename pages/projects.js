@@ -1,10 +1,10 @@
 import Layout from "../components/Layout";
-import Projects from "../components/Sections/Projects/Projects";
+import ProjectsScreen from "../components/Screens/ProjectsScreen";
 
 export default function Works() {
   return (
     <Layout>
-      <Projects />
+      <ProjectsScreen />
     </Layout>
   );
 };

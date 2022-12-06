@@ -1,10 +1,10 @@
 import Layout from "../components/Layout";
-import Contact from "../components/Sections/Contact/Contact";
+import ContactScreen from "../components/Screens/ContactScreen";
 
 export default function ContactMe() {
   return (
     <Layout>
-      <Contact />
+      <ContactScreen />
     </Layout>
   );
 };

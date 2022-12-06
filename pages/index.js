@@ -1,11 +1,11 @@
 import Layout from "../components/Layout";
-import Banner from "../components/Sections/Home/Banner";
+import HomeScreen from "../components/Screens/HomeScreen";
 
 const Home = () => {
   
   return (
     <Layout>
-      <Banner />
+      <HomeScreen />
     </Layout>
   );
 };

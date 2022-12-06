@@ -1,10 +1,10 @@
 import Layout from "../components/Layout";
-import About from "../components/Sections/About/About";
+import AboutScreen from "../components/Screens/AboutScreen";
 
 export default function AboutMe() {
   return (
     <Layout>
-      <About />
+      <AboutScreen />
     </Layout>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
   return (
-    <form className='contact-form' id='contact-form'>
+    <form className='contact-form' id='contact-form' autocomplete="off">
       <h4>Message Me</h4>
       <div className='row'>
         <div className='col-12 col-md-6 form-group'>
