@@ -1,0 +1,17 @@
+{
+    "navbar": {
+        "navLinks": {
+            "home": "Home",
+            "about": "About me",
+            "projects": "Projects",
+            "contact": "Contact"
+        }
+    },
+    "home": {
+        "textAnimation": ["Fullstack Developer", "Web Designer", "UI/UX Designer"],
+        "languageButton": {
+            "sp": "SPA",
+            "en": "ENG"
+        }
+    }
+}

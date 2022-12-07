@@ -1,12 +1,12 @@
 import Typewriter from "typewriter-effect";
 
-const TextAnimation = () => {
+const TextAnimation = ({ textAnimation }) => {
   return (
     <div className="home-content">
         <h1>Tomás Yovino</h1>
         <Typewriter 
           options={{
-            strings: ["Desarrollador Fullstack", "Diseñador Web", "Diseñador UX/UI"],
+            strings: [textAnimation[0], textAnimation[1], textAnimation[2]],
             autoStart: true,
             loop: true,
           }}

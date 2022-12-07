@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-const Navbar = () => {
+const Navbar = ({ navbar }) => {
+  const router = useRouter();
 
   return (
     <nav className="navbar navbar-dark navbar-expand-lg p-4">
@@ -11,10 +13,10 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link className="nav-link" aria-current="page" href="/">Inicio</Link>
-            <Link className="nav-link" aria-current="page" href="/about">Sobre mí</Link>
-            <Link className="nav-link" href="/projects">Proyectos</Link>
-            <Link className="nav-link" href="/contact">Contacto</Link>
+            <Link className="nav-link" aria-current="page" href="/" locale={router.locale} >{navbar.navLinks.home}</Link>
+            <Link className="nav-link" aria-current="page" href="/about" locale={router.locale} >{navbar.navLinks.about}</Link>
+            <Link className="nav-link" href="/projects" locale={router.locale} >{navbar.navLinks.projects}</Link>
+            <Link className="nav-link" href="/contact" locale={router.locale} >{navbar.navLinks.contact}</Link>
           </div>
         </div>
       </div>

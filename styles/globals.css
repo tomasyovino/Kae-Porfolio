@@ -178,6 +178,14 @@ a {
   gap: 15px;
 }
 
+#home .languages button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 #home .social-media {
   position: absolute;
   bottom: 50px;

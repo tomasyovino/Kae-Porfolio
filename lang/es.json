@@ -1,0 +1,17 @@
+{
+    "navbar": {
+        "navLinks": {
+            "home": "Inicio",
+            "about": "Sobre mí",
+            "projects": "Proyectos",
+            "contact": "Contacto"
+        }
+    },
+    "home": {
+        "textAnimation": ["Desarollador Fullstack", "Diseñador Web", "Diseñador UI/UX"],
+        "languageButton": {
+            "sp": "ESP",
+            "en": "ING"
+        }
+    }
+}

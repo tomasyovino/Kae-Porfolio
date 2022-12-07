@@ -1,11 +1,11 @@
 import LanguageHandler from "../Sections/Home/LanguageHandler";
 import Banner from "../Sections/Home/Banner";
 
-const HomeScreen = () => {
+const HomeScreen = ({ home }) => {
     return (
         <section id="home" className="d-flex justify-content-center align-items-center">
-            <LanguageHandler />
-            <Banner />
+            <LanguageHandler languageButton={home.languageButton} />
+            <Banner textAnimation={home.textAnimation} />
         </section>
     )
 }

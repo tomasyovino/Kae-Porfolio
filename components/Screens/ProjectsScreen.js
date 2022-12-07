@@ -8,7 +8,7 @@ const ProjectsScreen = () => {
     const [ categorySelected, setCategorySelected ] = useState(null);
   
     useEffect(() => {
-      fetch('http://localhost:3000/api/projects')
+      fetch('/api/projects')
       .then((response) => response.json())
       .then((data) => setProjects(data));
     }, []);
