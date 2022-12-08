@@ -1,7 +1,7 @@
 import { useState } from "react";
 import LoadingSpinnerButton from "./LoadingSpinnerButton";
 
-const Form = () => {
+const Form = ({ form }) => {
   const [ name, setName ] = useState();
   const [ email, setEmail ] = useState();
   const [ subject, setSubject ] = useState();
@@ -42,7 +42,7 @@ const Form = () => {
       autoComplete="off"
       onSubmit={handleSubmit}
     >
-      <h4>Message Me</h4>
+      <h4>{form.title}</h4>
       <div className='row'>
         <div className='col-12 col-md-6 form-group'>
           <input 
@@ -50,7 +50,7 @@ const Form = () => {
             id='contact-name' 
             type='text' 
             name='name' 
-            placeholder='Name' 
+            placeholder={form.inputPlaceholder[0]} 
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -61,7 +61,7 @@ const Form = () => {
             id='contact-email' 
             type='email' 
             name='email' 
-            placeholder='Email' 
+            placeholder={form.inputPlaceholder[1]}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -72,7 +72,7 @@ const Form = () => {
             id='contact-subject' 
             type='text' 
             name='subject' 
-            placeholder='Subject' 
+            placeholder={form.inputPlaceholder[2]}
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
           />
@@ -83,14 +83,14 @@ const Form = () => {
             id='contact-message' 
             type='text'
             name='message' 
-            placeholder='Message' 
+            placeholder={form.inputPlaceholder[3]}
             rows='5' 
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
         </div>
         <div className='col-12 form-submit'>
-          <LoadingSpinnerButton title={"Enviar"} buttonLoader={buttonLoader} />
+          <LoadingSpinnerButton buttonText={form.buttonText} buttonLoader={buttonLoader} />
           <p className='contact-feedback' style={{display: "none"}}></p>
         </div>
       </div>

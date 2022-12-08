@@ -315,9 +315,13 @@ a {
 #about .about-services .single-service i {
   color: #009e66;
   display: inline-block;
-  font-size: 58px;
   margin-bottom: 22px;
   pointer-events: none;
+}
+
+#about .about-services .single-service i svg {
+  width: 43.5px;
+  height: 58px;
 }
 
 #about .about-services .single-service h6 {

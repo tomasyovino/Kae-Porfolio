@@ -2,11 +2,11 @@ import Layout from "../components/Layout";
 import ProjectsScreen from "../components/Screens/ProjectsScreen";
 
 export default function Works(props) {
-  const { navbar, home } = props;
+  const { navbar, projects } = props;
   
   return (
     <Layout navbar={navbar}>
-      <ProjectsScreen />
+      <ProjectsScreen projectsLanguage={projects} />
     </Layout>
   );
 };
@@ -17,7 +17,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       navbar: response.default.navbar,
-      home: response.default.home,
+      projects: response.default.projects,
     }
   };
 };

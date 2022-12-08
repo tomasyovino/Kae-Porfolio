@@ -6,7 +6,7 @@ const TextAnimation = ({ textAnimation }) => {
         <h1>Tomás Yovino</h1>
         <Typewriter 
           options={{
-            strings: [textAnimation[0], textAnimation[1], textAnimation[2]],
+            strings: [textAnimation[0], textAnimation[1]],
             autoStart: true,
             loop: true,
           }}

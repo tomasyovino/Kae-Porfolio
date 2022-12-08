@@ -1,6 +1,6 @@
 import { Twitter, AlternateEmail, LinkedIn, GitHub, Instagram } from '@mui/icons-material';
 
-const Content = () => {
+const Content = ({ content }) => {
   return (
     <div className='about-info single-section'>
       <div className='row align-items-center'>
@@ -10,17 +10,17 @@ const Content = () => {
         </div>
         {/* <!-- Content part--> */}
         <div className='col-12 col-lg-7 info-content'>
-          <h2>Who am i?</h2>
-          <h6>I'm Tomás Yovino, a visual UX/UI Designer and Web Developer</h6>
-          <p className='description'>I am a freelancer based in the United Kingdom and i have been building noteworthy UX/UI designs and websites for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.</p>
+          <h2>{content.title}</h2>
+          <h6>{content.subtitle}</h6>
+          <p className='description'>{content.paragraph}</p>
           <div className="content-info">
             <div className='row'>
               <div className='col-12 col-md-6 single-info'>
-                <span>Nombre:</span>
+                <span>{content.info.name}</span>
                 <p>Tomás Yovino</p>
               </div>
               <div className='col-12 col-md-6 single-info'>
-                <span>Email:</span>
+                <span>{content.info.email}</span>
                 <a href='mailto:random@example.com'>
                   <p>example@gmail.com</p>
                 </a>
@@ -28,17 +28,17 @@ const Content = () => {
             </div>
             <div className='row'>
               <div className='col-12 col-md-6 single-info'>
-                <span>Edad:</span>
+                <span>{content.info.age}</span>
                 <p>24</p>
               </div>
               <div className='col-12 col-md-6 single-info'>
-                <span>Dirección:</span>
+                <span>{content.info.address}</span>
                 <p>Buenos Aires, Arg</p>
               </div>
             </div>
           </div>
           <div className='d-block d-sm-flex align-items-center'>
-            <a href='#' className='btn content-download'>Descargar CV</a>
+            <a href='#' className='btn content-download'>{content.info.buttonCV}</a>
             <ul className='list-unstyled list-inline content-follow'>
               <li className='list-inline-item'>
                 <a href='#'><Twitter /></a>

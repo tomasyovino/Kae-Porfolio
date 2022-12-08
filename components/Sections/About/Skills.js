@@ -10,7 +10,7 @@ import tool6 from "../../../assets/img/tools/react.svg";
 import tool7 from "../../../assets/img/tools/nodejs.svg";
 import tool8 from "../../../assets/img/tools/git.svg";
 
-const Skills = () => {
+const Skills = ({ skills }) => {
   const responsive = {
       superLargeDesktop: {
           breakpoint: { max:4000, min: 3000 },
@@ -35,8 +35,8 @@ const Skills = () => {
       <div className='row'>
         <div className='col-12'>
           <div className='section-heading'>
-            <p>Las herramientas que utilizo</p>
-            <h2>Mis Competencias</h2>
+            <p>{skills.sectionHeading.paragraph}</p>
+            <h2>{skills.sectionHeading.subtitle}</h2>
           </div>
         </div>
       </div>

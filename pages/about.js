@@ -2,11 +2,11 @@ import Layout from "../components/Layout";
 import AboutScreen from "../components/Screens/AboutScreen";
 
 export default function AboutMe(props) {
-  const { navbar, home } = props;
+  const { navbar, about } = props;
 
   return (
     <Layout navbar={navbar}>
-      <AboutScreen />
+      <AboutScreen about={about} />
     </Layout>
   );
 };
@@ -17,7 +17,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       navbar: response.default.navbar,
-      home: response.default.home,
+      about: response.default.about,
     }
   };
 };

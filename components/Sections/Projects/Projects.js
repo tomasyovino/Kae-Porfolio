@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { motion } from "framer-motion";
 
-const Projects = ({ projects, categorySelected }) => {
+const Projects = ({ projects, categorySelected, projectsUrl }) => {
 
   return (
     <>
@@ -15,8 +15,8 @@ const Projects = ({ projects, categorySelected }) => {
                   <div className="item-content">
                     <h6>{project.name}</h6>
                     <div>
-                      <a href={project.repoUrl} target="_blank" rel="noreferrer">GitHub</a>
-                      <a href={project.webUrl} target="_blank" rel="noreferrer">Web Page</a>
+                      <a href={project.repoUrl} target="_blank" rel="noreferrer">{projectsUrl.repository}</a>
+                      <a href={project.webUrl} target="_blank" rel="noreferrer">{projectsUrl.webPage}</a>
                     </div>
                   </div>
                 </div>
@@ -29,8 +29,8 @@ const Projects = ({ projects, categorySelected }) => {
                   <div className="item-content">
                     <h6>{project.name}</h6>
                     <div>
-                      <a href={project.repoUrl} target="_blank" rel="noreferrer">GitHub</a>
-                      <a href={project.webUrl} target="_blank" rel="noreferrer">Web Page</a>
+                      <a href={project.repoUrl} target="_blank" rel="noreferrer">{projectsUrl.repository}</a>
+                      <a href={project.webUrl} target="_blank" rel="noreferrer">{projectsUrl.webPage}</a>
                     </div>
                   </div>
                 </div>

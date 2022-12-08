@@ -1,12 +1,14 @@
 import React from 'react'
 
-const SectionHeading = ({ paragraph, subtitle }) => {
+const SectionHeading = ({ sectionHeading }) => {
+
+  console.log(sectionHeading.subtitle)
   return (
     <div className="row">
         <div className="col-12">
             <div className="section-heading page-heading">
-                <p>{paragraph}</p>
-                <h2>{subtitle}</h2>
+                <p>{sectionHeading.paragraph}</p>
+                <h2>{sectionHeading.subtitle}</h2>
                 <div className='animated-bar'></div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Filter = ({ categorySelected, setCategorySelected }) => {
+const Filter = ({ categorySelected, setCategorySelected, filter }) => {
     return (
         <div className="row">
             <div className="col-12">
@@ -8,19 +8,19 @@ const Filter = ({ categorySelected, setCategorySelected }) => {
                 <li 
                     className={ categorySelected === null ? "list-inline-item tab-active" : "list-inline-item"}
                     onClick={() => setCategorySelected(null)}
-                >All</li>
+                >{filter[0]}</li>
                 <li 
                     className={ categorySelected === "ecommerce" ? "list-inline-item tab-active" : "list-inline-item" }
                     onClick={() => setCategorySelected("ecommerce")}
-                >E-commerce</li>
+                >{filter[1]}</li>
                 <li 
                     className={ categorySelected === "social" ? "list-inline-item tab-active" : "list-inline-item" }
                     onClick={() => setCategorySelected("social")}
-                >Social</li>
+                >{filter[2]}</li>
                 <li 
                     className={ categorySelected === "blog" ? "list-inline-item tab-active" : "list-inline-item" }
                     onClick={() => setCategorySelected("blog")}
-                >Blog</li>
+                >{filter[3]}</li>
                 </ul>
             </div>
         </div>

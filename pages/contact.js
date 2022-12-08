@@ -2,11 +2,11 @@ import Layout from "../components/Layout";
 import ContactScreen from "../components/Screens/ContactScreen";
 
 export default function ContactMe(props) {
-  const { navbar, home } = props;
+  const { navbar, contact } = props;
   
   return (
     <Layout navbar={navbar}>
-      <ContactScreen />
+      <ContactScreen contact={contact} />
     </Layout>
   );
 };
@@ -17,7 +17,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       navbar: response.default.navbar,
-      home: response.default.home,
+      contact: response.default.contact,
     }
   };
 };

@@ -8,10 +8,98 @@
         }
     },
     "home": {
-        "textAnimation": ["Desarollador Fullstack", "Diseñador Web", "Diseñador UI/UX"],
+        "textAnimation": ["Desarrollador Fullstack", "Diseñador Web"],
         "languageButton": {
             "sp": "ESP",
             "en": "ING"
+        }
+    },
+    "about": {
+        "sectionHeading": {
+            "paragraph": "Conóceme mejor",
+            "subtitle": "Sobre Mí"
+        },
+        "content": {
+            "title": "¿Quién soy?",
+            "subtitle": "Soy Tomás Yovino, un Desarrollador Fullstack especializado en Javascript",
+            "paragraph": "Soy un talento libre con residencia en Argentina y he trabajado en varios proyectos decorosos que, cumplen con las últimas tendencias de diseño. Trabajo bajo la visión de una programación significativa, en la que todo componente es optimizado y reutilizable. Tener un buen ojo para la evolución del producto me ayuda a priorizar tareas, iterar rápido y entregar más rápido.",
+            "info": {
+                "name": "Nombre:",
+                "email": "Email:",
+                "age": "Edad:",
+                "address": "Dirección:",
+                "buttonCV": "Descargar CV"
+            }
+        },
+        "services": {
+            "sectionHeading": {
+                "paragraph": "Servicios que ofrezco",
+                "subtitle": "Mis Servicios"
+            },
+            "singleService": [
+                {
+                    "subtitle": "Desarrollo Web",
+                    "paragraph": "Construcción y manuntención de sitios web."
+                },
+                {
+                    "subtitle": "Desarrollo de Bases de Datos",
+                    "paragraph": "Creación y gestión de bases de datos y servidores."
+                },
+                {
+                    "subtitle": "Totalmente Responsivo",
+                    "paragraph": "Diseño de páginas adaptables y totalmente flexibles."
+                },
+                {
+                    "subtitle": "Tendencias de diseño",
+                    "paragraph": "Técnicas modernas con un diseño significativo para cada página."
+                },
+                {
+                    "subtitle": "Supervisión y Gestión",
+                    "paragraph": "Controlar la velocidad y escalabilidad del software."
+                },
+                {
+                    "subtitle": "Asesoramiento",
+                    "paragraph": "Orientación activa del área tecnológica."
+                }
+            ]
+        },
+        "skills": {
+            "sectionHeading": {
+                "paragraph": "Las herramientas que utilizo",
+                "subtitle": "Mis Habilidades"
+            }
+        }
+    },
+    "projects": {
+        "sectionHeading": {
+            "paragraph": "Mostrando algunos de mis mejores trabajos",
+            "subtitle": "Proyectos"
+        },
+        "filter": ["Todos", "E-commerce", "Social", "Blog"],
+        "projectsUrl": {
+            "repository": "GitHub",
+            "webPage": "Página Web"
+        }
+    },
+    "contact": {
+        "sectionHeading": {
+            "paragraph": "Siéntete libre de contactarme cuando quieras",
+            "subtitle": "Ponte en Contacto"
+        },
+        "form": {
+            "title": "Envíame un Mensaje",
+            "inputPlaceholder": ["Nombre", "Email", "Asunto", "Mensaje"],
+            "buttonText": "Enviar"
+        },
+        "info": {
+            "title": "Información de Contacto",
+            "paragraph": "Siempre disponible para trabajar en el proyecto adecuado, ¡No dudes en contactarme!",
+            "details": {
+                "name": "Nombre",
+                "address": "Dirección",
+                "phone": "Llámame",
+                "email": "Mensajeame"
+            }
         }
     }
 }

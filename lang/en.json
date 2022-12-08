@@ -8,10 +8,98 @@
         }
     },
     "home": {
-        "textAnimation": ["Fullstack Developer", "Web Designer", "UI/UX Designer"],
+        "textAnimation": ["Fullstack Developer", "Web Designer"],
         "languageButton": {
             "sp": "SPA",
             "en": "ENG"
+        }
+    },
+    "about": {
+        "sectionHeading": {
+            "paragraph": "Get to know me better",
+            "subtitle": "About Me"
+        },
+        "content": {
+            "title": "Who am I?",
+            "subtitle": "I'm Tomás Yovino, a Fullstack Developer specialized in Javascript.",
+            "paragraph": "I am a free talent with residence in Argentina and I have worked on several decorous projects that meet the latest design trends. I work under the vision of meaningful programming, where every component is optimized and reusable. Having a good eye for product evolution helps me to prioritize tasks, iterate fast and deliver faster.",
+            "info": {
+                "name": "Name:",
+                "email": "Email:",
+                "age": "Age:",
+                "address": "Direction:",
+                "buttonCV": "Download CV"
+            }
+        },
+        "services": {
+            "sectionHeading": {
+                "paragraph": "Services that I offer",
+                "subtitle": "My Services"
+            },
+            "singleService": [
+                {
+                    "subtitle": "Web Development",
+                    "paragraph": "Web site construction and maintenance."
+                },
+                {
+                    "subtitle": "Database Development",
+                    "paragraph": "Creation and management of databases and servers."
+                },
+                {
+                    "subtitle": "Fully Responsive",
+                    "paragraph": "Adaptable and totally flexible web design."
+                },
+                {
+                    "subtitle": "Design Trends",
+                    "paragraph": "Modern techniques with a meaningful design for each page."
+                },
+                {
+                    "subtitle": "Supervision and Management",
+                    "paragraph": "Control software speed and scalability."
+                },
+                {
+                    "subtitle": "Consulting",
+                    "paragraph": "Active orientation of the technological area."
+                }
+            ]
+        },
+        "skills": {
+            "sectionHeading": {
+                "paragraph": "The tools I use",
+                "subtitle": "My Skills"
+            }
+        }
+    },
+    "projects": {
+        "sectionHeading": {
+            "paragraph": "Showcasing some of my best works",
+            "subtitle": "Projects"
+        },
+        "filter": ["All", "E-commerce", "Social", "Blog"],
+        "projectsUrl": {
+            "repository": "GitHub",
+            "webPage": "Web Page"
+        }
+    },
+    "contact": {
+        "sectionHeading": {
+            "paragraph": "Feel free to contact me anytimes",
+            "subtitle": "Get in Touch"
+        },
+        "form": {
+            "title": "Message Me",
+            "inputPlaceholder": ["Name", "Email", "Subject", "Message"],
+            "buttonText": "Send"
+        },
+        "info": {
+            "title": "Contact Info",
+            "paragraph": "Always available for freelance work if the right project comes along, Feel free to contact me!",
+            "details": {
+                "name": "Name",
+                "address": "Address",
+                "phone": "Call Me",
+                "email": "Email Me"
+            }
         }
     }
 }
