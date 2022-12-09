@@ -3,11 +3,10 @@ import { motion } from "framer-motion";
 import Loading from '../../Loader';
 
 const Projects = ({ projects, categorySelected, projectsUrl }) => {
-  let pepe = false
   return (
     <>
       {
-        pepe ? projects.map((project) => {
+        projects ? projects.map((project) => {
           if (project.category === categorySelected && categorySelected !== null) {
             return (
               <motion.div layout className="single-item col-12 col-md-6 col-lg-4" key={project._id}>
