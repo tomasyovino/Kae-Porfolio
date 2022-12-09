@@ -25,6 +25,11 @@ body {
   min-height: 85vh;
 }
 
+.loader-container {
+  text-align: center;
+  min-height: 85vh;
+}
+
 a {
   color: white!important;
   text-decoration: none!important;

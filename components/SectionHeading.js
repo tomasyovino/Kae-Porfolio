@@ -1,8 +1,7 @@
 import React from 'react'
 
 const SectionHeading = ({ sectionHeading }) => {
-
-  console.log(sectionHeading.subtitle)
+  
   return (
     <div className="row">
         <div className="col-12">
