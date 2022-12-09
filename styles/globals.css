@@ -489,6 +489,11 @@ a {
   position: relative;
 }
 
+#projects .projects-section .projects-grid .loader-container {
+  min-height: auto;
+  margin-top: 50px;
+}
+
 #projects .projects-section .projects-grid .project-wrapper {
   align-items: center;
   display: flex;
