@@ -29,7 +29,7 @@ const Info = ({ info }) => {
             <Call className='info-icon' />
             <div className='media-body info-details'>
               <h6>{info.details.phone}</h6>
-              <a href='#'><span>+54 9 113911 2892</span></a>
+              <a href='https://wa.me/1139112892' target="_blank" rel="noopener noreferrer"><span>+54 9 113911 2892</span></a>
             </div>
           </div>
         </li>
@@ -38,7 +38,7 @@ const Info = ({ info }) => {
             <Send className='info-icon' />
             <div className='media-body info-details'>
               <h6>{info.details.email}</h6>
-              <a href='#'><span>tomasyovino@gmail.com</span></a>
+              <a href='mailto:tomasyovino@gmail.com' target="_blank" rel="noopener noreferrer"><span>tomasyovino@gmail.com</span></a>
             </div>
           </div>
         </li>

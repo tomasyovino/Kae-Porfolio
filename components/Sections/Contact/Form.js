@@ -53,6 +53,7 @@ const Form = ({ form }) => {
             placeholder={form.inputPlaceholder[0]} 
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
           />
         </div>
         <div className='col-12 col-md-6 form-group'>
@@ -64,6 +65,7 @@ const Form = ({ form }) => {
             placeholder={form.inputPlaceholder[1]}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </div>
         <div className='col-12 form-group'>
@@ -75,6 +77,7 @@ const Form = ({ form }) => {
             placeholder={form.inputPlaceholder[2]}
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
+            required
           />
         </div>
         <div className='col-12 form-group form-message'>
@@ -87,6 +90,7 @@ const Form = ({ form }) => {
             rows='5' 
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            required
           />
         </div>
         <div className='col-12 form-submit'>

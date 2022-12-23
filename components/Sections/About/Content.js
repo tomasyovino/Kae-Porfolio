@@ -1,4 +1,6 @@
 import { Twitter, AlternateEmail, LinkedIn, GitHub, Instagram } from '@mui/icons-material';
+import Image from "next/image";
+import picture from "../../../assets/img/about_me.png";
 
 const Content = ({ content }) => {
   return (
@@ -6,7 +8,7 @@ const Content = ({ content }) => {
       <div className='row align-items-center'>
         {/* <!-- Picture part--> */}
         <div className='col-12 col-lg-5 info-img'>
-          <span>Imagen</span>
+          <Image src={picture} className="img-fluid img-thumbnail" />
         </div>
         {/* <!-- Content part--> */}
         <div className='col-12 col-lg-7 info-content'>
@@ -21,8 +23,8 @@ const Content = ({ content }) => {
               </div>
               <div className='col-12 col-md-6 single-info'>
                 <span>{content.info.email}</span>
-                <a href='mailto:random@example.com'>
-                  <p>example@gmail.com</p>
+                <a href='mailto:tomasyovino@gmail.com' target="_blank" rel="noopener noreferrer">
+                  <p>tomasyovino@gmail.com</p>
                 </a>
               </div>
             </div>
@@ -38,22 +40,28 @@ const Content = ({ content }) => {
             </div>
           </div>
           <div className='d-block d-sm-flex align-items-center'>
-            <a href='#' className='btn content-download'>{content.info.buttonCV}</a>
+            <a 
+              href={`/${content.info.CVRef}`}
+              download={content.info.CVRef}
+              className='btn content-download'
+            >
+              {content.info.buttonCV}
+            </a>
             <ul className='list-unstyled list-inline content-follow'>
               <li className='list-inline-item'>
-                <a href='#'><Twitter /></a>
+                <a href='https://twitter.com/TomasYovino' target="_blank" rel="noopener noreferrer"><Twitter /></a>
               </li>
               <li className='list-inline-item'>
-                <a href='#'><AlternateEmail /></a>
+                <a href='mailto:tomasyovino@gmail.com' target="_blank" rel="noopener noreferrer"><AlternateEmail /></a>
               </li>
               <li className='list-inline-item'>
-                <a href='#'><LinkedIn /></a>
+                <a href='https://www.linkedin.com/in/tomás-yovino-a0955a238/' target="_blank" rel="noopener noreferrer"><LinkedIn /></a>
               </li>
               <li className='list-inline-item'>
-                <a href='#'><GitHub /></a>
+                <a href='https://github.com/tomasyovino' target="_blank" rel="noopener noreferrer"><GitHub /></a>
               </li>
               <li className='list-inline-item'>
-                <a href='#'><Instagram /></a>
+                <a href='https://www.instagram.com/tomasyovino/' target="_blank" rel="noopener noreferrer"><Instagram /></a>
               </li>
             </ul>
           </div>

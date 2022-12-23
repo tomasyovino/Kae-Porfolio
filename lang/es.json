@@ -28,7 +28,8 @@
                 "email": "Email:",
                 "age": "Edad:",
                 "address": "Dirección:",
-                "buttonCV": "Descargar CV"
+                "buttonCV": "Descargar CV",
+                "CVRef": "CV - Tomas Yovino - Desarrollador Full Stack.pdf"
             }
         },
         "services": {

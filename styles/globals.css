@@ -42,6 +42,10 @@ a {
 }
 
 .navbar .navbar-brand {
+  font-size: 24px;
+  padding: 8px 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
   margin-left: 32px;
 }
 
@@ -181,6 +185,7 @@ a {
   bottom: 50px;
   left: -20px;
   gap: 15px;
+  z-index: 1;
 }
 
 #home .languages button {
@@ -211,6 +216,17 @@ a {
 }
 
 /* About Section */
+#about .about-info .info-img img{
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+  background-color: transparent;
+  border-color: rgba(0,0,0,.18);
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+
 #about .about-info .info-content h2 {
   color: #009e66;
   font-size: 24px;
@@ -557,7 +573,7 @@ a {
 }
 
 #projects .projects-section .projects-grid .project-wrapper .item-content a:hover {
-  color: #00bd7a;
+  color: #00bd7a !important;
   border: 1px solid #00bd7a;
 }
 
@@ -587,6 +603,17 @@ a {
   }
 }
 
+@media (max-width: 991px) {
+  #about .about-info .info-img img {
+    border-radius: 50%;
+    display: block;
+    height: 250px;
+    margin: 0 auto 40px auto;
+    object-fit: cover;
+    width: 250px;
+  }
+}
+
 @media (max-width: 728px) {
   .navbar .navbar-nav {
     margin-top: 20px;
@@ -607,6 +634,11 @@ a {
   }
 
   /* About Media */
+  #about .about-info .info-img img {
+    height: 200px;
+    width: 200px;
+  }
+
   #about .about-info .info-content .content-download {
     margin-bottom: 27px;
   }
