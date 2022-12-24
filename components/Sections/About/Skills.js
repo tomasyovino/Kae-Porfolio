@@ -1,14 +1,18 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
-import tool1 from "../../../assets/img/tools/html.svg";
-import tool2 from "../../../assets/img/tools/css.svg";
-import tool3 from "../../../assets/img/tools/bootstrap.svg";
-import tool4 from "../../../assets/img/tools/sass.svg";
-import tool5 from "../../../assets/img/tools/javascript.svg";
-import tool6 from "../../../assets/img/tools/react.svg";
-import tool7 from "../../../assets/img/tools/nodejs.svg";
-import tool8 from "../../../assets/img/tools/git.svg";
+import htmlIcon from "../../../assets/img/tools/html.svg";
+import cssIcon from "../../../assets/img/tools/css.svg";
+import bootstrapIcon from "../../../assets/img/tools/bootstrap.svg";
+import sassIcon from "../../../assets/img/tools/sass.svg";
+import javascriptIcon from "../../../assets/img/tools/javascript.svg";
+import reactIcon from "../../../assets/img/tools/react.svg";
+import nodeJsIcon from "../../../assets/img/tools/nodejs.svg";
+import gitIcon from "../../../assets/img/tools/git.svg";
+import nestJsIcon from "../../../assets/img/tools/nestjs.webp";
+import sqlIcon from "../../../assets/img/tools/sql.webp";
+import mongoDbIcon from "../../../assets/img/tools/mongodb.webp";
+import jsonIcon from "../../../assets/img/tools/json.webp";
 
 const Skills = ({ skills }) => {
   const responsive = {
@@ -50,14 +54,18 @@ const Skills = ({ skills }) => {
             autoPlay={true} 
             autoPlaySpeed={2500} 
           >
-            <Image src={tool1} />
-            <Image src={tool2} />
-            <Image src={tool3} />
-            <Image src={tool4} />
-            <Image src={tool5} />
-            <Image src={tool6} />
-            <Image src={tool7} />
-            <Image src={tool8} />
+            <Image src={htmlIcon} />
+            <Image src={cssIcon} />
+            <Image src={bootstrapIcon} />
+            <Image src={sassIcon} />
+            <Image src={javascriptIcon} />
+            <Image src={reactIcon} />
+            <Image src={nodeJsIcon} />
+            <Image src={nestJsIcon} />
+            <Image src={mongoDbIcon} />
+            <Image src={sqlIcon} />
+            <Image src={jsonIcon} />
+            <Image src={gitIcon} />
           </Carousel>
         </div>
       </div>

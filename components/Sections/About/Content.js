@@ -8,7 +8,7 @@ const Content = ({ content }) => {
       <div className='row align-items-center'>
         {/* <!-- Picture part--> */}
         <div className='col-12 col-lg-5 info-img'>
-          <Image src={picture} className="img-fluid img-thumbnail" />
+          <Image src={picture} className="img-fluid img-thumbnail" priority />
         </div>
         {/* <!-- Content part--> */}
         <div className='col-12 col-lg-7 info-content'>
