@@ -3,6 +3,16 @@ import Image from "next/image";
 import picture from "../../../assets/img/about_me.png";
 
 const Content = ({ content }) => {
+  const today = new Date();
+  const birthDate = new Date('1998-05-18');
+
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  };
+
+
   return (
     <div className='about-info single-section'>
       <div className='row align-items-center'>
@@ -31,7 +41,7 @@ const Content = ({ content }) => {
             <div className='row'>
               <div className='col-12 col-md-6 single-info'>
                 <span>{content.info.age}</span>
-                <p>24</p>
+                <p>{age}</p>
               </div>
               <div className='col-12 col-md-6 single-info'>
                 <span>{content.info.address}</span>
