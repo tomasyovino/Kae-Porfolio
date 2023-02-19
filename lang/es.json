@@ -76,7 +76,7 @@
             "paragraph": "Mostrando algunos de mis mejores trabajos",
             "subtitle": "Proyectos"
         },
-        "filter": ["Todos", "E-commerce", "Social", "Blog"],
+        "filter": ["Todos", "E-commerce", "Social", "Útiles"],
         "projectsUrl": {
             "repository": "GitHub",
             "webPage": "Página Web"

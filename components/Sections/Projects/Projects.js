@@ -6,7 +6,7 @@ const Projects = ({ projects, categorySelected, projectsUrl }) => {
   return (
     <>
       {
-        projects ? projects.map((project) => {
+        projects ? projects.slice().reverse().map((project) => {
           if (project.category === categorySelected && categorySelected !== null) {
             return (
               <motion.div layout className="single-item col-12 col-md-6 col-lg-4" key={project._id}>

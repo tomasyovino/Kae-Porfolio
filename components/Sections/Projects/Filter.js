@@ -18,8 +18,8 @@ const Filter = ({ categorySelected, setCategorySelected, filter }) => {
                     onClick={() => setCategorySelected("social")}
                 >{filter[2]}</li>
                 <li 
-                    className={ categorySelected === "blog" ? "list-inline-item tab-active" : "list-inline-item" }
-                    onClick={() => setCategorySelected("blog")}
+                    className={ categorySelected === "tool" ? "list-inline-item tab-active" : "list-inline-item" }
+                    onClick={() => setCategorySelected("tool")}
                 >{filter[3]}</li>
                 </ul>
             </div>
